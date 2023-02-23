@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Para calcular média de salarios, maior salario e a porcentagem de habitantes que recebem mais que mil reais.\n")
+		escreva("Para calcular média de salarios, maior salario e a porcentagem de habitantes que recebem até mil reais.\n")
 		escreva("Insira quantos salarios serão contabilizados:\n")
 		real maiorSalario = 0.0
 		real salario
@@ -26,7 +26,7 @@ programa
 			{
 				maiorSalario = salario
 			}
-			se(salario > 999)
+			se(salario <= 1000)
 			{
 				salarioMil++
 			}
@@ -53,7 +53,7 @@ programa
 		escreva("Aqui vai os resultados.\n")
 		escreva("O maior salario é: " + maiorSalario + "\n")
 		escreva("A média de salarios é de " + mediaSalario + "\n")
-		escreva("A porcentagem de habitantes que recebem mais que mil reais é de " + salarioporcentagem + "%\n")
+		escreva("A porcentagem de habitantes que recebem até mil reais é de " + salarioporcentagem + "%\n")
 		escreva("A média de filhos por habitante é de " + mediaFilhos + " filhos")
 	}
 }
